@@ -53,7 +53,7 @@ void attack(monster*& t, monster *&boss) {
     else
         a = rand() % 2;
     b = rand() % 3;
-    dmg = (int)((float)(rand() % 10000)*damage[rand() % 10]);
+    dmg = (int)((float)(rand() % 10000)*damage[rand() % 10]/100);
     switch (a) {
     case 0:
         cout<<t->getname()<<" stroke "<<boss->getname()<<" using "<<melee[b]<<"!"<<endl;
