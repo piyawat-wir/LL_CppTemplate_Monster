@@ -23,5 +23,6 @@ int main(int argc, char *argv[])
     A.show_all();
     A.atk_All(boss);
     //system("PAUSE");
+    delete boss;
     return 0;
 }
